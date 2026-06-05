@@ -2,17 +2,17 @@ name: Third Workflow
 on: push
 
 jobs:
-    run-first-command:
-        runs-on: ubuntu-latest
-        steps:
-            - name: List Files
-              run: ls -a
-            # - uses: actions/checkout@v6
-            - name: Copy Files
-              run: |
-                  git init
-                  git remote add origin https://$GITHUB_ACTOR:${{secrets.GITHUB_TOKEN}}@github.com/$GITHUB_REPOSITORY.git
-                  git fetch origin
-                  git checkout main
-            - name: List Files
-              run: ls -a
+  run-first-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List Files
+        run: lshhgk -a
+      # - uses: actions/checkout@v6
+      - name: Copy Files
+        run: |
+          git init
+          git remote add origin https://$GITHUB_ACTOR:${{secrets.GITHUB_TOKEN}}@github.com/$GITHUB_REPOSITORY.git
+          git fetch origin
+          git checkout main
+      - name: List Files
+        run: ls -a
