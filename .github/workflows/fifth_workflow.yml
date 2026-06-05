@@ -2,7 +2,7 @@ name: Fifth Workflow
 on:
     issues:
         types: [edited, deleted]
-    pull_request:
+    pull_request_target:
         types: [assigned, closed]
 
 jobs:
